@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>hw1</title>
+<title>Hello</title>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -13,18 +13,52 @@
   width:20%;
   text-align:center;
 }
-.menu a {
-  background-color:#ccc;
-  padding:22px;
-  margin-top:30px;
-  display:block;
-  width:100%;
-  color:blue;
+
+.dpMenu {
+  background-color: #ccc;
+  color: blue;
+  width:200%;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dpMenu-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dpMenu-content a {
+  color: lightblue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dpMenu-content a:hover {background-color: #ccc; color: blue;}
+
+.dropdown:hover .dpMenu-content {
+  display: block;
+}
+
+.dropdown:hover .dpMenu {
+  background-color: gray;
+  color: lightblue;
 }
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .dpMunu, .dropdown {
     width:100%;
   }
 }
@@ -42,13 +76,20 @@
   <h1>Hello</h1>
 </div>
 
-<div class="menu">
-  <a href="index.html">self introduction</a>
-  <a href="school.html">my school</a>
-  <a href="picture.html">my picture</a>
+<div style="background-color:lightcyan;">
+<div class="dropdown">
+  <button class="dpMenu">Menu</button>
+    <div class="dpMenu-content">
+      <a href="selfIntroduction.html">self introduction</a>
+      <a href="school.html">my school</a>
+      <a href="picture.html">my picture</a>
+    </div>
+</div>
 </div>
 
+
 <div style="background-color:lightcyan;color:black;padding:100px;text-align: center;">
+  
   <h1>My picture</h1>
   <img src="pic.jpg" width="60%" height="60%">
 </div>
