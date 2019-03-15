@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>hw4</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>hw1</title>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
   box-sizing: border-box;
 }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
+.menu {
+  background-color:#ccc;
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#ccc;
+  padding:22px;
+  margin-top:30px;
+  display:block;
+  width:100%;
+  color:blue;
 }
 
 @media only screen and (max-width:620px) {
@@ -20,82 +29,32 @@ body {
   }
 }
 
-/* Style the header */
-header {
-  background-color: lightblue;
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 25%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 75%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
 </style>
 </head>
-<body>
 
-<h1>About me</h1>
+<body style="font-family: Arial, Helvetica, sans-serif">
 
-<header>
-  <h2>Hello</h2>
-</header>
+<div style="background-color:#ffffff;padding:15px;">
+  <h1>About me</h1>
+</div>
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="selfIntroduction.html">self introduction</a></li>
-      <li><a href="school.html">my school</a></li>
-      <li><a href="picture.html">my picture</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <div style="background-color:lightcyan;color:black;padding:100px;text-align: center;">
-  <h1>大家好</h1>
+<div style="background-color:lightblue;padding:20px;text-align:center;font-size: 35px;color: white;">
+  <h1>Hello</h1>
+</div>
+
+<div class="menu">
+  <a href="index.html">self introduction</a>
+  <a href="school.html">my school</a>
+  <a href="picture.html">my picture</a>
+</div>
+
+<div style="background-color:lightcyan;color:black;padding:100px;text-align: center;">
+  <h1>My name is Leo.</h1>
 </div>
 
 <div style="background-color:gray;color:white;padding:50px;text-align: center;">
-  <h4>我是辜鼎洪。</h4>
+  <h4>^^</h4>
 </div>
-  </article>
-  
-</section>
 
 </body>
 </html>
